@@ -1,0 +1,9 @@
+{
+    "profiles": {
+        "Padrao": {
+            "path": "default",
+            "avatar": "http://localhost:5001/placeholder.png"
+        }
+    },
+    "current": "Padrao"
+}

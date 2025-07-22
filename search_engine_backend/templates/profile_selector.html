@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Perfil - PyGlide</title>
+    <link rel="stylesheet" href="/static/profile_selector.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quem está usando o PyGlide?</h1>
+        <div id="profile-list" class="profile-list">
+            <!-- Perfis serão inseridos aqui dinamicamente -->
+        </div>
+        <div class="actions">
+            <button id="add-profile-btn">Adicionar Perfil</button>
+        </div>
+    </div>
+
+    <!-- Modal de Configurações do Perfil -->
+    <div id="settings-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Configurações do Perfil</h2>
+            <img id="modal-avatar" src="" alt="Avatar" class="modal-avatar">
+            <input type="file" id="avatar-input" accept="image/*" style="display: none;">
+            <button id="change-avatar-btn">Mudar Foto</button>
+            <input type="text" id="modal-profile-name" placeholder="Nome do Perfil">
+            <button id="save-settings-btn">Salvar</button>
+            <button id="delete-profile-btn" class="delete-btn">Excluir Perfil</button>
+        </div>
+    </div>
+    <script src="qrc:///qtwebchannel/qwebchannel.js"></script>
+    <script src="/static/profile_selector.js"></script>
+</body>
+</html>
